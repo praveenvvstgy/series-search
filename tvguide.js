@@ -10,7 +10,7 @@ webix.ready(function () {
 					view: "toolbar",
 					id: "mainToolbar",
 					cols: [
-						{view: "text", id: "searchInput", placeholder: "Search Series"},
+						{view: "text", id: "searchInput", placeholder: "Search Series", on:{onChange: "search_series"}},
 						{view: "button", value:"Search", width: 150, click: "search_series"}
 					]
 				},
